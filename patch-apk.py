@@ -34,6 +34,7 @@ def main():
 			print("Saving a copy of the APK to " + args.save_apk)
 			print("")
 			shutil.copy(apkfile, args.save_apk)
+			sys.exit(0)
 		
 		#Patch the target APK with objection
 		print("Patching " + apkfile.split(os.sep)[-1] + " with objection.")
